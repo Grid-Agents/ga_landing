@@ -25,8 +25,8 @@ function useReplay() {
   return { ref, k };
 }
 
-const STROKE = "#1a1a18";
-const ACCENT = "#2d3f2e";
+const STROKE = "#111111";
+const ACCENT = "#111111";
 const svgProps = {
   viewBox: "0 0 100 100",
   width: 84,

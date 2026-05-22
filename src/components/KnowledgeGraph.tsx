@@ -160,7 +160,7 @@ export default function KnowledgeGraph() {
             y1={na[1]}
             x2={nb[0]}
             y2={nb[1]}
-            stroke="#1a1a18"
+            stroke="#111111"
             strokeWidth={0.6}
             strokeOpacity={0.4}
             strokeLinecap="round"
@@ -177,7 +177,7 @@ export default function KnowledgeGraph() {
           cx={x}
           cy={y}
           r={i < 8 ? 2.2 : 3}
-          fill={i < 8 ? "#1a1a18" : "#2d3f2e"}
+          fill={i < 8 ? "#111111" : "#111111"}
         />
       ))}
     </svg>

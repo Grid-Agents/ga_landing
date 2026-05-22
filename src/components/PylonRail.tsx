@@ -8,8 +8,8 @@ import { useEffect, useRef, useState } from "react";
 // position (no persistence). A small draw-head dot rides the leading edge
 // of the wire so the motion is clearly visible.
 
-const STROKE = "#1a1a18";
-const ACCENT = "#2d3f2e";
+const STROKE = "#111111";
+const ACCENT = "#111111";
 const PYLON_CX = 64;
 const INTERVAL = 540;
 const START_Y = 560; // first pylon sits below the first fold so it draws in

@@ -10,9 +10,9 @@ html {
 }
 
 :root {
-  --background: #f7efdf; /* warmer cream */
-  --foreground: #1a1a18;
-  --accent: #2d3f2e;
+  --background: #ffffff; /* white */
+  --foreground: #111111;
+  --accent: #111111;
 }
 
 @theme inline {
@@ -240,7 +240,7 @@ section {
 .cta-pill-filled:hover {
   background: var(--accent) !important;
   transform: translateY(-1px);
-  box-shadow: 0 6px 18px rgba(45,63,46,0.22);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.18);
 }
 .cta-pill-outline {
   transition: background 180ms ease, border-color 180ms ease, transform 180ms ease;

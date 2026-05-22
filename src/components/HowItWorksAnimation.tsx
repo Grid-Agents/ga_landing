@@ -18,9 +18,9 @@ const SVG_H = 360;
 const DEV = { x: 100, y: 150 };
 const DNO = { x: 420, y: 150 };
 
-const STROKE = "#1a1a18";
-const ACCENT = "#2d3f2e";
-const PAPER = "#f7efdf";
+const STROKE = "#111111";
+const ACCENT = "#111111";
+const PAPER = "#ffffff";
 
 // ────────────────────────────────────────────────────────────────────────────
 // Timing (seconds from mount)
@@ -513,7 +513,7 @@ function OperatorAndOntology() {
   const chips = [
     "Similar case · 2024-Q3 substation upgrade",
     "Constraint · feeder F12 thermal limit",
-    "Precedent · G99 §A.3 voltage tolerance",
+    "Precedent · grid-code voltage tolerance",
   ];
   const chipX = 352;
   const chipW = 184;
