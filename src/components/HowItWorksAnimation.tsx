@@ -25,16 +25,18 @@ const PAPER = "#f7efdf";
 // ────────────────────────────────────────────────────────────────────────────
 // Timing (seconds from mount)
 // ────────────────────────────────────────────────────────────────────────────
+// Beat timings — compressed ~13% from the original cadence for a slightly
+// faster overall play, keeping the same relative pacing.
 const T = {
-  beat1: 0.6,   // grid forms
-  beat2: 3.1,   // dev submits docs
-  beat3: 5.1,   // agents review
-  beat4: 7.6,   // engineering studies
-  beat5: 10.6,  // operator + ontology
-  beat6: 13.6,  // decision returns
-  beat7: 15.1,  // project built
-  loop: 17.1,   // power flows infinitely
-  payoff: 19.0, // payoff text
+  beat1: 0.5,   // grid forms
+  beat2: 2.7,   // dev submits docs
+  beat3: 4.4,   // agents review
+  beat4: 6.6,   // engineering studies
+  beat5: 9.2,   // operator + ontology
+  beat6: 11.8,  // decision returns
+  beat7: 13.1,  // project built
+  loop: 14.9,   // power flows infinitely
+  payoff: 16.5, // payoff text
 };
 
 const EASE = "cubic-bezier(0.65,0,0.35,1)";
@@ -1328,7 +1330,14 @@ export default function HowItWorksAnimation() {
             filter: "url(#ga-glow)",
           }}
         />
-        <circle r={6} fill={ACCENT} filter="url(#ga-glow)">
+        {/* opacity 0 until beat 6 so it isn't parked at the SVG origin (0,0) */}
+        <circle
+          r={6}
+          fill={ACCENT}
+          filter="url(#ga-glow)"
+          opacity={0}
+          style={{ animation: `ga-fade-in 0.2s ease ${T.beat6}s forwards` }}
+        >
           <animateMotion path={decisionPath} begin={`${T.beat6}s`} dur="1.2s" fill="freeze" />
         </circle>
 

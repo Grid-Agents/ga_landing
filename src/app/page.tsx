@@ -109,10 +109,8 @@ export default function Home() {
                 letterSpacing: "-0.015em",
               }}
             >
-              700&nbsp;GW stuck in the queue.{" "}
-              <span style={{ color: "var(--accent)" }}>
-                Four times what Britain needs.
-              </span>
+              The AI intelligence layer{" "}
+              <span style={{ color: "var(--accent)" }}>for the grid.</span>
             </h1>
             <p
               style={{
@@ -123,7 +121,7 @@ export default function Home() {
                 opacity: 0.85,
               }}
             >
-              The connection queue grew tenfold in five years. Grid Agents builds AI agents that review grid connection applications and run the engineering studies — turning a months-long bottleneck into hours and days, for developers and grid operators alike.
+              AI agents that review grid connection applications and run the engineering studies — turning a months-long queue into hours and days.
             </p>
 
             <div style={{ display: "flex", gap: "0.875rem", flexWrap: "wrap", alignItems: "center" }}>
@@ -244,8 +242,8 @@ export default function Home() {
             </div>
             <p style={{ fontSize: "1.1rem", lineHeight: 1.6, margin: 0, opacity: 0.85 }}>
               Clearing the queue unlocks up to{" "}
-              <span style={{ color: "var(--accent)", fontWeight: 600 }}>£40bn of investment a year</span>, on top of roughly{" "}
-              <span style={{ color: "var(--accent)", fontWeight: 600 }}>£58bn of grid upgrades</span> planned for 2030. Yet no existing tool reviews the complex, document-heavy applications that cause the backlog — Grid Agents is the first that does.
+              <span style={{ color: "var(--accent)", fontWeight: 600 }}>£40bn a year</span>, plus{" "}
+              <span style={{ color: "var(--accent)", fontWeight: 600 }}>~£58bn of grid upgrades</span> by 2030. No tool reviews the document-heavy applications behind the backlog — Grid Agents is the first.
             </p>
           </div>
         </section>
@@ -326,22 +324,6 @@ export default function Home() {
                 </div>
               ))}
             </div>
-
-            <p
-              style={{
-                marginTop: "2.5rem",
-                maxWidth: "42rem",
-                fontSize: "1.05rem",
-                lineHeight: 1.6,
-                opacity: 0.8,
-              }}
-            >
-              And demand is only accelerating:{" "}
-              <span style={{ color: "var(--accent)", fontWeight: 600 }}>
-                data-centre electricity demand is forecast to grow roughly fivefold by 2030
-              </span>{" "}
-              as the AI boom lands — piling fresh applications onto a queue that already dwarfs the network.
-            </p>
           </div>
         </section>
 
@@ -371,23 +353,12 @@ export default function Home() {
                 fontSize: "1.0625rem",
                 lineHeight: 1.6,
                 maxWidth: "40rem",
-                marginBottom: "1.25rem",
+                marginBottom: "3rem",
                 opacity: 0.85,
               }}
             >
-              Agents screen each pack for completeness, compliance and consistency, prioritise it against Clean Power 2030 and Gate&nbsp;1/Gate&nbsp;2 readiness, then run the engineering studies an assessment normally waits weeks for — power flow, fault level, thermal and voltage-step analysis — automating tools like{" "}
-              <span style={{ fontWeight: 600 }}>DIgSILENT PowerFactory</span> end to end and handing the operator ontology-backed context for every result.
-            </p>
-            <p
-              style={{
-                fontSize: "1.0625rem",
-                lineHeight: 1.6,
-                maxWidth: "40rem",
-                marginBottom: "3rem",
-                opacity: 0.8,
-              }}
-            >
-              Every check and study is traced back to the rule or model it came from — so developers and grid operators see exactly why a decision was reached.
+              Agents screen each pack for completeness, compliance and consistency, then run the engineering studies — power flow, fault level, thermal — automating tools like{" "}
+              <span style={{ fontWeight: 600 }}>DIgSILENT PowerFactory</span>. Every result is traced back to the rule it came from.
             </p>
 
             {/* Animation */}
@@ -461,7 +432,7 @@ export default function Home() {
                       <span style={{ color: "var(--accent)", fontSize: "0.75rem", letterSpacing: "0.12em", marginRight: "0.6rem", verticalAlign: "0.18em", fontFamily: "var(--font-sans), system-ui, sans-serif" }}>01</span>
                       Knowledge capture &amp; transfer.
                     </strong>
-                    Tacit judgement — which edge cases to flag, how to read ambiguous diagrams, where network constraints bite — encoded into a model that improves with every application.
+                    Tacit judgement — which cases to flag, how to read ambiguous diagrams — encoded into a model that sharpens with every application.
                   </p>
                 </div>
               </ScrollReveal>
@@ -477,7 +448,7 @@ export default function Home() {
                       <span style={{ color: "var(--accent)", fontSize: "0.75rem", letterSpacing: "0.12em", marginRight: "0.6rem", verticalAlign: "0.18em", fontFamily: "var(--font-sans), system-ui, sans-serif" }}>02</span>
                       Onboarding acceleration.
                     </strong>
-                    From day one, new engineers work alongside an AI that surfaces similar prior cases — how they were assessed, what was flagged, how resolved.
+                    New engineers work alongside an AI that surfaces similar prior cases — how each was assessed, flagged, resolved.
                   </p>
                 </div>
               </ScrollReveal>
@@ -493,7 +464,7 @@ export default function Home() {
                       <span style={{ color: "var(--accent)", fontSize: "0.75rem", letterSpacing: "0.12em", marginRight: "0.6rem", verticalAlign: "0.18em", fontFamily: "var(--font-sans), system-ui, sans-serif" }}>03</span>
                       70–95% off engineer time.
                     </strong>
-                    2–3× throughput, zero net new recruitment. Seniors freed for the judgement calls that actually need them.
+                    2–3× throughput, zero new hires. Seniors freed for the calls that actually need them.
                   </p>
                 </div>
               </ScrollReveal>
@@ -509,7 +480,7 @@ export default function Home() {
                       <span style={{ color: "var(--accent)", fontSize: "0.75rem", letterSpacing: "0.12em", marginRight: "0.6rem", verticalAlign: "0.18em", fontFamily: "var(--font-sans), system-ui, sans-serif" }}>04</span>
                       Voice agents that reach out.
                     </strong>
-                    No more months of silence. AI voice agents call and message developers the moment a pack is incomplete — chasing missing documents, clarifying ambiguous drawings, confirming details — so a review never stalls waiting on a reply.
+                    AI voice agents call and message developers the moment a pack is incomplete — chasing documents, clarifying drawings — so reviews never stall on a reply.
                   </p>
                 </div>
               </ScrollReveal>
@@ -525,7 +496,7 @@ export default function Home() {
                       <span style={{ color: "var(--accent)", fontSize: "0.75rem", letterSpacing: "0.12em", marginRight: "0.6rem", verticalAlign: "0.18em", fontFamily: "var(--font-sans), system-ui, sans-serif" }}>05</span>
                       The queue, cleared.
                     </strong>
-                    Every week off the queue accelerates revenue for developers and frees grid operators to connect what the country actually needs.
+                    Every week off the queue speeds revenue for developers and frees operators to connect what matters.
                   </p>
                 </div>
               </ScrollReveal>
