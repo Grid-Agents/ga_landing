@@ -90,7 +90,7 @@ export default function Home() {
             whiteSpace: "nowrap",
           }}
         >
-          Book a pilot
+          Contact Us
         </a>
       </nav>
 
@@ -112,7 +112,7 @@ export default function Home() {
               <span style={{ color: "var(--accent)" }}>for the grid.</span>
             </h1>
 
-            {/* Backed by — black strip with white EWOR logo, just below the headline */}
+            {/* Backed by — black pill with white EWOR logo, just below the headline */}
             <a
               id="backing"
               href="https://www.ewor.com"
@@ -175,7 +175,7 @@ export default function Home() {
                   fontWeight: 500,
                 }}
               >
-                Book a pilot →
+                Contact Us →
               </a>
               <a
                 href="#how-it-works"
@@ -596,7 +596,7 @@ export default function Home() {
                       fontWeight: 500,
                     }}
                   >
-                    Book a pilot →
+                    Contact Us →
                   </a>
                   <a
                     href="mailto:hello@gridagents.com"
