@@ -1,0 +1,10 @@
+{
+  "iteration": 1,
+  "max_iterations": 5,
+  "status": "approved",
+  "last_verdict": "APPROVED",
+  "round": 2,
+  "round_note": "Round 2 — polish animation (Lucide icons, synced captions, tighter pacing, end-state payoff) + add bespoke SVG illustrations for the 5 USPs. Converged on iter 1.",
+  "dev_server_url": "http://localhost:3000",
+  "reference_url": "https://sequoiacap.com/"
+}

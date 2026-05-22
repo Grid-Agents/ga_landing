@@ -39,3 +39,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local test/preview artifacts (screenshots, clips, browser scratch)
+/*.png
+/*.mp4
+.playwright-mcp/
