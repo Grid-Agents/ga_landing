@@ -20,7 +20,7 @@ const DNO = { x: 420, y: 150 };
 
 const STROKE = "#1a1a18";
 const ACCENT = "#2d3f2e";
-const PAPER = "#faf7f0";
+const PAPER = "#f7efdf";
 
 // ────────────────────────────────────────────────────────────────────────────
 // Timing (seconds from mount)

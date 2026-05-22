@@ -3,7 +3,7 @@ import HowItWorksAnimationLoader from "@/components/HowItWorksAnimationLoader";
 import KnowledgeGraph from "@/components/KnowledgeGraph";
 import ScrollReveal from "@/components/ScrollReveal";
 import PylonRail from "@/components/PylonRail";
-import { OnboardingGlyph, GaugeGlyph, VoiceGlyph, StopwatchGlyph } from "@/components/UspGlyphs";
+import { OnboardingGlyph, GaugeGlyph, VoiceGlyph, QueueGlyph } from "@/components/UspGlyphs";
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
           position: "sticky",
           top: 0,
           zIndex: 50,
-          background: "rgba(250, 247, 240, 0.85)",
+          background: "rgba(247, 239, 223, 0.85)",
           backdropFilter: "blur(8px)",
           WebkitBackdropFilter: "blur(8px)",
           borderBottom: "1px solid rgba(26,26,24,0.08)",
@@ -518,7 +518,7 @@ export default function Home() {
               <ScrollReveal as="li" style={{ borderTop: "1px solid rgba(26,26,24,0.1)", padding: "1.75rem 0" }} delay={0.05}>
                 <div className="usp-row" style={{ position: "relative" }}>
                   <div style={{ flexShrink: 0 }}>
-                    <StopwatchGlyph />
+                    <QueueGlyph />
                   </div>
                   <p style={{ fontSize: "1.0625rem", lineHeight: 1.55, margin: 0 }}>
                     <strong style={{ fontWeight: 600, display: "block", marginBottom: "0.35rem", fontSize: "1.125rem" }}>

@@ -122,28 +122,30 @@ export function VoiceGlyph() {
   );
 }
 
-// 05 — Faster reviews: stopwatch hand sweeps one clockwise rotation.
-export function StopwatchGlyph() {
+// 05 — The queue, cleared: a stacked backlog of applications drains out one
+// by one, leaving a green check (the queue cleared).
+const QUEUE_BARS = [0, 1, 2, 3, 4];
+export function QueueGlyph() {
   const { ref, k } = useReplay();
   return (
     <svg ref={ref} {...svgProps}>
-      <circle cx="50" cy="62" r="30" />
-      <rect x="43" y="28" width="14" height="8" rx="2" />
-      <path d="M 38 30 Q 30 20 38 14" />
-      <line x1="50" y1="33" x2="50" y2="38" />
-      <line x1="79" y1="62" x2="74" y2="62" />
-      <line x1="50" y1="91" x2="50" y2="86" />
-      <line x1="21" y1="62" x2="26" y2="62" />
-      <circle cx="50" cy="62" r="3" fill={STROKE} stroke="none" />
-      <line
-        key={k}
-        className="ga-glyph-sweep"
-        x1="50"
-        y1="62"
-        x2="50"
-        y2="40"
-        strokeWidth="1.5"
-      />
+      {/* Queue baseline / tray */}
+      <line x1="14" y1="84" x2="72" y2="84" />
+      <line x1="14" y1="84" x2="14" y2="79" />
+      <line x1="72" y1="84" x2="72" y2="79" />
+      {/* Backlog bars draining out (top first) — the queue clears */}
+      {QUEUE_BARS.map((i) => (
+        <rect
+          key={`${k}-${i}`}
+          className="ga-queue-bar"
+          x="16"
+          y={16 + i * 12}
+          width="44"
+          height="8"
+          rx="2"
+          style={{ animationDelay: `${i * 0.18}s` }}
+        />
+      ))}
     </svg>
   );
 }

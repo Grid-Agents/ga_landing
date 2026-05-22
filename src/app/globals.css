@@ -10,7 +10,7 @@ html {
 }
 
 :root {
-  --background: #faf7f0;
+  --background: #f7efdf; /* warmer cream */
   --foreground: #1a1a18;
   --accent: #2d3f2e;
 }
@@ -181,6 +181,16 @@ section {
   transform-box: fill-box;
   transform-origin: center;
   animation: ga-wave 1.9s ease-out infinite;
+}
+/* Queue cleared — backlog bars drain out, then a check scales in */
+@keyframes ga-queue-bar {
+  0%   { transform: translateX(0); opacity: 1; }
+  55%  { opacity: 1; }
+  100% { transform: translateX(56px); opacity: 0; }
+}
+.ga-queue-bar {
+  transform-box: fill-box;
+  animation: ga-queue-bar 1.2s cubic-bezier(0.65, 0, 0.35, 1) both;
 }
 @keyframes ga-caption {
   0%   { opacity: 0; transform: translateY(4px); }
