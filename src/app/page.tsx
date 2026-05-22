@@ -461,7 +461,7 @@ export default function Home() {
                       <span style={{ color: "var(--accent)", fontSize: "0.75rem", letterSpacing: "0.12em", marginRight: "0.6rem", verticalAlign: "0.18em", fontFamily: "var(--font-sans), system-ui, sans-serif" }}>01</span>
                       Knowledge capture &amp; transfer.
                     </strong>
-                    Tacit judgement — which edge cases to flag, how to read ambiguous diagrams, where network constraints bite — encoded into a model that improves with every application. <span style={{ opacity: 0.6 }}>Hover the graph.</span>
+                    Tacit judgement — which edge cases to flag, how to read ambiguous diagrams, where network constraints bite — encoded into a model that improves with every application.
                   </p>
                 </div>
               </ScrollReveal>
