@@ -176,10 +176,12 @@ export default function PylonRail() {
         style={{ opacity: 0, transition: "opacity 0.2s ease" }}
       />
 
-      {/* Pylons — fade + lift as the reveal line passes; reverse on scroll up */}
+      {/* Pylons — fade + lift as the reveal line passes; reverse on scroll up.
+          The first pylon is always shown so the rail is anchored at the top of
+          the page; the rest reveal/hide with scroll as usual. */}
       {built.map((p, i) => {
         const baseY = pylons[i];
-        const shown = revealY > baseY - 30;
+        const shown = i === 0 || revealY > baseY - 30;
         return (
           <g
             key={`pylon-${i}`}

@@ -72,9 +72,10 @@ const BG_DOTS = [
 const PYLONS = [
   { x: 188, y: 78 },
   { x: 296, y: 52 },
-  { x: 548, y: 70 },
+  { x: 550, y: 70 },
   { x: 232, y: 296 },
-  { x: 552, y: 286 },
+  { x: 550, y: 286 }, // shares x with the upper-right pylon so their risers
+  //                     and branch-anchor dots align (no doubled dot)
 ];
 
 // Main DEV→DNO connection — deeper catenary sag so the connection reads
