@@ -228,6 +228,13 @@ section {
   }
 }
 
+@media (max-width: 960px) {
+  .hero-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+}
+
 /* Nav link hover */
 .nav-links a:hover {
   opacity: 1 !important;

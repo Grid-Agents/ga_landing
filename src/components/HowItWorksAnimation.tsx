@@ -785,10 +785,10 @@ export default function HowItWorksAnimation() {
   // Captions — 7 beats + payoff
   const captions = [
     { text: "01 — Grid network traced", start: T.beat1, dur: T.beat2 - T.beat1 },
-    { text: "02 — Developer submits the application pack", start: T.beat2, dur: T.beat3 - T.beat2 },
+    { text: "02 — Energy project developer submits the application pack", start: T.beat2, dur: T.beat3 - T.beat2 },
     { text: "03 — Agents run completeness · compliance · consistency · readiness", start: T.beat3, dur: T.beat4 - T.beat3 },
     { text: "04 — Engineering studies · power flow, fault level, thermal", start: T.beat4, dur: T.beat5 - T.beat4 },
-    { text: "05 — Operator reviews · assisted by the proprietary ontology", start: T.beat5, dur: T.beat6 - T.beat5 },
+    { text: "05 — Grid operator reviews · assisted by the proprietary ontology", start: T.beat5, dur: T.beat6 - T.beat5 },
     { text: "06 — Decision returned in hours and days, not months", start: T.beat6, dur: T.beat7 - T.beat6 },
     { text: "07 — Project enters construction · power flows", start: T.beat7, dur: 3.0 },
   ];
@@ -1085,12 +1085,12 @@ export default function HowItWorksAnimation() {
           />
         ))}
 
-        {/* DEVELOPER / DNO labels: fade in at beat 2, then fade out for the
-            ontology beat (so chips have a clean band) and fade back in for
-            beats 6-7. */}
+        {/* ENERGY PROJECT DEVELOPER / GRID OPERATOR labels: fade in at beat 2,
+            then fade out for the ontology beat (so chips have a clean band)
+            and fade back in for beats 6-7. */}
         <text
           x={DEV.x}
-          y={DEV.y + 32}
+          y={DEV.y + 40}
           textAnchor="middle"
           fontSize="9"
           letterSpacing="0.14em"
@@ -1104,11 +1104,12 @@ export default function HowItWorksAnimation() {
               `ga-fade-in 0.5s ease ${T.beat6 + 0.2}s forwards`,
           }}
         >
-          DEVELOPER
+          <tspan x={DEV.x} dy="0">ENERGY PROJECT</tspan>
+          <tspan x={DEV.x} dy="11">DEVELOPER</tspan>
         </text>
         <text
           x={DNO.x}
-          y={DNO.y + 32}
+          y={DNO.y + 40}
           textAnchor="middle"
           fontSize="9"
           letterSpacing="0.14em"
@@ -1122,7 +1123,7 @@ export default function HowItWorksAnimation() {
               `ga-fade-in 0.5s ease ${T.beat6 + 0.2}s forwards`,
           }}
         >
-          OPERATOR
+          GRID OPERATOR
         </text>
 
         {/* ── Beat 2: documents fly DEV → OPERATOR along the line ──
