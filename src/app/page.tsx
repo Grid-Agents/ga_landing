@@ -68,8 +68,8 @@ export default function Home() {
         <section
           id="hero"
           style={{
-            paddingTop: "4rem",
-            paddingBottom: "4rem",
+            paddingTop: "7rem",
+            paddingBottom: "5.5rem",
           }}
         >
           <div style={{ maxWidth: "80rem", margin: "0 auto", padding: "0 1.5rem" }}>
