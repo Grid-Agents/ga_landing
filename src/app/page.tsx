@@ -69,7 +69,7 @@ export default function Home() {
         <section
           id="hero"
           style={{
-            paddingTop: "7rem",
+            paddingTop: "8.5rem",
             paddingBottom: "5.5rem",
           }}
         >
@@ -279,8 +279,8 @@ export default function Home() {
         {/* ── Footer ────────────────────────────────────────── */}
         <footer
           style={{
-            paddingTop: "1rem",
-            paddingBottom: "1rem",
+            paddingTop: "5rem",
+            paddingBottom: "1.5rem",
           }}
         >
           <div

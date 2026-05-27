@@ -1604,7 +1604,6 @@ export default function HowItWorksAnimation() {
           fontFamily: "var(--font-sans), system-ui, sans-serif",
           fontSize: "0.84rem",
           letterSpacing: "0.16em",
-          textTransform: "uppercase",
           opacity: 0,
           textAlign: "center",
           marginTop: "0.75rem",
