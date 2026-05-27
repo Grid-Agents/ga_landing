@@ -16,7 +16,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Grid Agents",
-  description: "The AI intelligence layer for the grid — agents that review grid connection applications and run the engineering studies.",
+  description: "The Intelligence Layer for the Grid — agents that review grid connection applications and run the engineering studies.",
 };
 
 export default function RootLayout({

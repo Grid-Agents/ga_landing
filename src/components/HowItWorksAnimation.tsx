@@ -18,9 +18,9 @@ const SVG_H = 360;
 const DEV = { x: 100, y: 150 };
 const DNO = { x: 420, y: 150 };
 
-const STROKE = "#111111";
-const ACCENT = "#111111";
-const PAPER = "#ffffff";
+const STROKE = "#1a1a18"; /* icons — black */
+const ACCENT = "#555555"; /* paths/connections — mid-grey, subtle hierarchy below icons */
+const PAPER = "#ffffff"; /* crisp white card on cool off-white bg */
 
 // ────────────────────────────────────────────────────────────────────────────
 // Timing (seconds from mount)
@@ -134,9 +134,13 @@ interface OverlayProps {
 
 function Overlay({ x, y, offsetX = 0, offsetY = 0, style, className = "icon-overlay", children }: OverlayProps) {
   const { left, top } = pct(x, y);
+  // Two-layer wrapping: outer holds the absolute position + the per-icon
+  // translate that centres it on (x,y). Inner holds the consumer-supplied
+  // animation/style. This keeps keyframes like `ga-scale-in` / `ga-rise`
+  // (which set `transform: scale(1)` / `translateY(0)` in their final
+  // state) from clobbering the centring translate.
   return (
     <div
-      className={className}
       style={{
         position: "absolute",
         left,
@@ -144,10 +148,11 @@ function Overlay({ x, y, offsetX = 0, offsetY = 0, style, className = "icon-over
         transform: `translate(${offsetX}px, ${offsetY}px)`,
         lineHeight: 0,
         pointerEvents: "none",
-        ...style,
       }}
     >
-      {children}
+      <div className={className} style={style}>
+        {children}
+      </div>
     </div>
   );
 }
@@ -1447,9 +1452,7 @@ export default function HowItWorksAnimation() {
               animation: anim,
             }}
           >
-            <span style={isUpper ? undefined : { display: "inline-block", transform: "scaleY(-1)" }}>
-              <RadioTower size={20} strokeWidth={1.4} color={STROKE} />
-            </span>
+            <RadioTower size={20} strokeWidth={1.4} color={STROKE} />
           </Overlay>
         );
       })}
@@ -1609,7 +1612,7 @@ export default function HowItWorksAnimation() {
           color: STROKE,
         }}
       >
-        From application to decision: hours and days, not months.
+        Connection decisions in days, not months.
       </div>
     </div>
   );

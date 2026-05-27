@@ -1,4 +1,3 @@
-import Image from "next/image";
 import HowItWorksAnimationLoader from "@/components/HowItWorksAnimationLoader";
 
 export default function Home() {
@@ -10,7 +9,7 @@ export default function Home() {
           position: "sticky",
           top: 0,
           zIndex: 50,
-          background: "rgba(255,255,255,0.8)",
+          background: "rgba(245,245,247,0.82)",
           backdropFilter: "blur(8px)",
           WebkitBackdropFilter: "blur(8px)",
           borderBottom: "1px solid rgba(26,26,24,0.08)",
@@ -31,16 +30,18 @@ export default function Home() {
           <a
             href="#hero"
             aria-label="Grid Agents"
-            style={{ display: "inline-flex", alignItems: "center", lineHeight: 0 }}
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              textDecoration: "none",
+              color: "var(--foreground)",
+              fontFamily: "'Proxima Nova', 'proxima-nova', var(--font-sans), system-ui, sans-serif",
+              fontSize: "1.05rem",
+              fontWeight: 700,
+              letterSpacing: "-0.005em",
+            }}
           >
-            <Image
-              src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/grid-agents-logo.png`}
-              alt="Grid Agents"
-              width={130}
-              height={24}
-              priority
-              style={{ height: 24, width: "auto" }}
-            />
+            Grid Agents
           </a>
           <div style={{ flex: 1 }} />
           <a
@@ -92,7 +93,7 @@ export default function Home() {
                 letterSpacing: "-0.015em",
               }}
             >
-              The AI intelligence layer{" "}
+              The intelligence layer{" "}
               <span style={{ color: "var(--accent)" }}>for the grid.</span>
             </h1>
 
@@ -111,13 +112,28 @@ export default function Home() {
                 height="80"
                 viewBox="0 0 50 100"
                 fill="none"
-                stroke="#111"
+                stroke="currentColor"
                 strokeWidth="1.4"
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 className="hero-pylon"
-                style={{ flexShrink: 0, opacity: 0.55, marginTop: "0.15rem" }}
+                style={{ flexShrink: 0, marginTop: "0.15rem", opacity: 0.5, color: "var(--foreground)" }}
               >
+                <defs>
+                  <filter
+                    id="hero-pylon-glow"
+                    x="-200%"
+                    y="-200%"
+                    width="500%"
+                    height="500%"
+                  >
+                    <feGaussianBlur stdDeviation="2.8" />
+                    <feMerge>
+                      <feMergeNode />
+                      <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                  </filter>
+                </defs>
                 {/* Legs */}
                 <line x1="22" y1="14" x2="14" y2="92" />
                 <line x1="28" y1="14" x2="36" y2="92" />
@@ -141,6 +157,16 @@ export default function Home() {
                 {/* Top tip */}
                 <line x1="22" y1="14" x2="25" y2="6" />
                 <line x1="28" y1="14" x2="25" y2="6" />
+                {/* Energy flow dot — rises from base, fades through the top */}
+                <circle
+                  cx="25"
+                  cy="92"
+                  r="2.8"
+                  fill="#c2853f"
+                  stroke="none"
+                  filter="url(#hero-pylon-glow)"
+                  className="hero-pylon-flow"
+                />
               </svg>
               <p
                 style={{
@@ -151,7 +177,7 @@ export default function Home() {
                   opacity: 0.85,
                 }}
               >
-                AI agents that handle the reviews and engineering studies behind every grid connection — accelerating clean power onto the grid, worldwide.
+                Automating the technical reviews and assessments behind every grid connection — at the pace the energy transition demands.
               </p>
             </div>
 
