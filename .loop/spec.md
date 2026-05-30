@@ -36,7 +36,7 @@ The deck's dark/sans aesthetic is deliberately **not** used on the landing page.
 
 ## Primary CTA
 
-**Book a pilot / demo call**, pointed at the placeholder `hello@gridagents.com`. Use `mailto:` for now; the user will swap in a Calendly URL later. Same CTA copy in the hero and the footer.
+**Book a pilot / demo call**, pointed at `hello@grid-agents.com`. Use `mailto:` for now; the user will swap in a Calendly URL later. Same CTA copy in the hero and the footer.
 
 ## The animation (centrepiece, "How it works" section)
 

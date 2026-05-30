@@ -45,7 +45,7 @@ export default function Home() {
           </a>
           <div style={{ flex: 1 }} />
           <a
-            href="mailto:hello@gridagents.com"
+            href="mailto:hello@grid-agents.com"
             className="cta-pill-filled"
             style={{
               fontFamily: "var(--font-sans), system-ui, sans-serif",
@@ -183,7 +183,7 @@ export default function Home() {
 
             <div style={{ display: "flex", gap: "0.875rem", flexWrap: "wrap", alignItems: "center" }}>
               <a
-                href="mailto:hello@gridagents.com"
+                href="mailto:hello@grid-agents.com"
                 className="cta-pill-filled"
                 style={{
                   fontFamily: "var(--font-sans), system-ui, sans-serif",
