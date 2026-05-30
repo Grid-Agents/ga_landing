@@ -56,4 +56,4 @@ The deck itself uses dark/black backgrounds with off-white sans-serif type and m
 - Not a blog or content marketing surface.
 - Not a recruiting page.
 
-It exists to convert two audiences into pilot conversations: **DNO decision-makers** (procurement, ops, innovation) and **investors**. The primary CTA is **Book a pilot / demo call** (placeholder address: `hello@gridagents.com`).
+It exists to convert two audiences into pilot conversations: **DNO decision-makers** (procurement, ops, innovation) and **investors**. The primary CTA is **Book a pilot / demo call** (contact address: `hello@grid-agents.com`).

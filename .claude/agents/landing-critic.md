@@ -52,7 +52,7 @@ Use these as your standing checks; the orchestrator may also inline iteration-sp
 
 - Are the five sections present and in the right order: Hero → Problem → How it works (with animation) → Outcomes → Regulator proof → EWOR backing → CTA footer?
 - Does the copy use the brief's vocabulary (DNO, ENA, EIP176, Ofgem, G99, single-line diagram)? Or is it generic SaaS copy ("supercharge", "unlock", exclamation marks)?
-- Is the primary CTA `Book a pilot / demo call` pointing at `mailto:hello@gridagents.com`? Present in the hero AND the footer?
+- Is the primary CTA `Book a pilot / demo call` pointing at `mailto:hello@grid-agents.com`? Present in the hero AND the footer?
 - Is the £7.46m / 12 untimely offers / 6.5 quality score data accurately stated?
 - Founders should NOT be visible (intentional). EWOR backing SHOULD be present.
 

@@ -111,5 +111,5 @@ Wait for the critic. The critic's final message is its verdict.
 When the loop converges (APPROVED) or stops (cap / blocked):
 
 1. Print the final state and the dev server URL.
-2. Suggest concrete next steps the user might want — e.g., "review the page in your own browser", "swap the placeholder `hello@gridagents.com` for a real Calendly link", "commit when you're happy".
+2. Suggest concrete next steps the user might want — e.g., "review the page in your own browser", "swap the `hello@grid-agents.com` mailto for a real Calendly link", "commit when you're happy".
 3. Do not auto-commit, auto-push, or auto-deploy. The user owns those decisions.
