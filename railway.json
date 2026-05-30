@@ -5,8 +5,7 @@
     "buildCommand": "NEXT_OUTPUT=server npm run build"
   },
   "deploy": {
-    "startCommand": "NEXT_OUTPUT=server npm run start",
-    "healthcheckPath": "/",
+    "startCommand": "NEXT_OUTPUT=server PORT=3000 npm run start",
     "restartPolicyType": "ON_FAILURE",
     "restartPolicyMaxRetries": 3
   }
